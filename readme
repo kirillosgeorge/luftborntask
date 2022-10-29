@@ -1,2 +1,13 @@
 Don't have access to azure cloud so i assue that i have account to work with 
-i build main.tf it has all the config recources requested 
+i build main.tf it has all the config recources requested .
+
+steps to fellow :
+1- get azure account
+2- install azure cli and login to it 
+3- run terraform commands : terraform init to install azurerm provider 
+terraform plan -out test.tfplan 
+terraform apply "test.tfplan" 
+4- login azure portal to see if the recources are created
+5-  use ssh command : ssh -i add public key location on disk root@output of public ip from console. 
+6- to install nginx shell 1st scp command to transfer it to the server on azure. 
+7- to run the command run the shell script use ./nginx.sh 
